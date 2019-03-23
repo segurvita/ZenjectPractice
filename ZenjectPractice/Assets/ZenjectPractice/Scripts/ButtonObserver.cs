@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class ButtonObserver : MonoBehaviour
 {
     public Button button;
-    Renderer targetRenderer;
+    public Renderer targetRenderer;
 
     void Start()
     {
@@ -13,7 +13,7 @@ public class ButtonObserver : MonoBehaviour
         targetRenderer = GetComponent<Renderer>();
     }
 
-    void OnClick()
+    public void OnClick()
     {
         targetRenderer.enabled = true;
     }
